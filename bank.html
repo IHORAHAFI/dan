@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pay</title>
+</head>
+<body bgcolor="blue" text="yellow">
+    <center style="color: brown;">
+        <h2>Payment Form</h2>
+        <table>
+            <tr>
+                <td>Your First Name:</td>
+                <td><input type="text" id="fName" placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td>Your Last Name:</td>
+                <td><input type="text" id="lName" placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <td>Enter Your Bank Account:</td>
+                <td>
+                    <input type="number" id="bank" placeholder="Your bank account">
+                    <input type="number" id="amount" placeholder="140000" required>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button onclick="checkPayment()">Pay</button></td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        function checkPayment() {
+            const amount = document.getElementById('amount').value;
+            if (parseInt(amount) === 140000) {
+                alert("Payment Successful. Your reference number is @444444.kyt");
+            } else {
+                alert("Payment Failed. Please enter the correct amount: 140000");
+            }
+        }
+    </script>
+
+    <h2 style="color: aliceblue;"><a href="imagek.html" style="color: aliceblue;">Go back</a></h2>
+</body>
+</html>

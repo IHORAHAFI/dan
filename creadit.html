@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width, initiol-scale=1">
+        <title>pay</title>
+
+    </head>
+    <body bgcolor="blue">
+     <center style="color: yellow"><h2>payment form</h2><table>
+        <td>your first name</td>
+            <td><input type="text" id="fName" placeholder="enter your fist name"</td></tr>
+            <tr><td>your last name</td>
+                <td><input type="text" id="lName" placeholder="enter your last name"</td></tr>
+  <tr><td>
+    Enter your creadit card</td><td><input type="number" name="bakn" placeholder="creadit card"><input type="number" id="amount" placeholder="140000" required></td><br>
+   <tr><td></td><td><button onclick="checkPayment()">pay</button></td></tr>
+  </table></h2> </center>
+    
+        <script>
+            function checkPayment() {
+                var amount = document.getElementById("amount").value;
+                if (amount == 140000) {
+                    alert("Payment Successful your reference number is @444444.kyt ");
+                } else {
+                    alert("Payment Failed , enter correct ammount 140000");
+                }
+            }
+        </script>
+       <h2> <p style="color: white; text-decoration: none; text-align: right;"><a href="imagek.html">Go back </a></p></h2>
+    
+</body>
+</htm

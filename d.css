@@ -1,0 +1,16 @@
+body{
+    display:flex;
+    background-color: blue;
+    margin: 2px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.v{font-size: large;
+    flex: 1;
+    text-align: center;
+ color: blueviolet;   background-color: aliceblue;
+}
+.k{clear: right;
+    size: 4;
+
+}
